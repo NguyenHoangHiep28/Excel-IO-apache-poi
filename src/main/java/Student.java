@@ -3,6 +3,13 @@ public class Student {
     private String name;
     private String grade;
     public Student(){}
+
+    public Student(Integer id, String name, String grade) {
+        this.id = id;
+        this.name = name;
+        this.grade = grade;
+    }
+
     public Integer getId() {
         return id;
     }

@@ -1,14 +1,18 @@
+import java.util.Date;
+
 public class Account {
     private Integer id;
     private String name;
     private Double balance;
+    private Date effectiveStartDate;
     public Account(){
 
     }
-    public Account(Integer id, String name, Double balance) {
+    public Account(Integer id, String name, Double balance, Date effectiveStartDate) {
         this.id = id;
         this.name = name;
         this.balance = balance;
+        this.effectiveStartDate = effectiveStartDate;
     }
 
     public Integer getId() {
@@ -33,6 +37,14 @@ public class Account {
 
     public void setBalance(Double balance) {
         this.balance = balance;
+    }
+
+    public Date getEffectiveStartDate() {
+        return effectiveStartDate;
+    }
+
+    public void setEffectiveStartDate(Date effectiveStartDate) {
+        this.effectiveStartDate = effectiveStartDate;
     }
 
     @Override
