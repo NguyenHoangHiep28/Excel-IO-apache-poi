@@ -1,17 +1,16 @@
 import java.util.List;
 import java.util.Map;
-import java.util.function.Predicate;
 
-public class AdvancedExcelStructural <T>{
+public class ExcelWriterStructural<T>{
     private String sheetName;
     private String[] headers;
     private Map<Integer, Integer> cellsWidth;
     private List<T> listItem;
     private Map<Integer, CellMapping> objectMappingRules;
 
-    public AdvancedExcelStructural() {
+    public ExcelWriterStructural() {
     }
-    public AdvancedExcelStructural(String sheetName, String[] headers, Map<Integer, Integer> cellsWidth, List<T> listItem, Map<Integer, CellMapping> objectMappingRules) {
+    public ExcelWriterStructural(String sheetName, String[] headers, Map<Integer, Integer> cellsWidth, List<T> listItem, Map<Integer, CellMapping> objectMappingRules) {
         this.sheetName = sheetName;
         this.headers = headers;
         this.cellsWidth = cellsWidth;
